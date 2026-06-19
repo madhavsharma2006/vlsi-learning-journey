@@ -12,7 +12,7 @@ and a3 (w7,w4,a0,a1);
 and a4 (w10,w1,w2,b0); 
 and a5 (w11,w2,b1,b0); 
 and a6 (w12,w1,w3); 
-and a7 (G,w8,w9); 
+and a7 (E,w8,w9); 
 xnor xn1(w8,a0,b0);
 xnor xn2(w9,a1,b1);
 or o1(G,w5,w6,w7);
