@@ -5,15 +5,24 @@ module example ;
   reg lt;
   reg gtoe;
   reg ltoe ;
+  reg eq ;
+  reg neq ;
+  reg ceq; 
+  reg nceq;  
   initial 
     begin 
-      a = 4'b1011 ;
-      b = 4'b1100 ;
+      a = 4'b111x ;
+      b = 4'b1110 ;
       gt = a> b ;
       lt = b>a ;
       gtoe = a >= b ;
       ltoe = b >=a ;
-      $display ("%b %b %b %b",gt,lt,gtoe,ltoe);
+      eq = a==b ; 
+      neq = a!=b ; 
+      ceq = a===b ;
+      nceq = a!==b ;
+      
+      $display ("%b %b %b %b %b %b %b %b",gt,lt,gtoe,ltoe,eq,neq,ceq,nceq);
     end 
 endmodule 
 // if true then output 1, otherwise output 0 
